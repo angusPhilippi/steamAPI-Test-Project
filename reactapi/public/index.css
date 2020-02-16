@@ -1,0 +1,97 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 100;
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+    background: #3fafd7;
+    color: white;
+    width: 100px;
+    display: inline-block;
+}
+
+input{
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 2px solid #AAA;
+    font-size: 20px;
+    width: 80%;
+}
+
+    
+p{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.btn {
+    display: block;
+    width: 145px;
+    margin: 100px;
+    padding: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.25s;
+    background: linear-gradient(90deg, var(--colourOne, #3bc9ff), var(--colourTwo, #ffffff) 50%, var(--colourOne, #3bc9ff)) var(--horizontalChange, 0)/ 200%;
+    box-shadow: 0 0 20px #555;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    --horizontalChange: -45%;
+}
+
+table {  
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 640px; 
+    border-collapse: 
+    collapse; border-spacing: 0; 
+}
+
+td, th {  
+    border: 1px solid transparent; /* No more visible border */
+    height: 30px; 
+    transition: all 0.3s;  /* Simple transition for hover effect */
+    padding: 4px;
+}
+
+th {  
+    background: #AAA;  /* Darken header a bit */
+    font-weight: bold;
+    width: 40px;
+}
+
+td {  
+    background: #FAFAFA;
+    text-align: center;
+    border: 1px solid #AAA;
+}
+
+.instructions p{
+    padding-left: 20px;
+}
+
+.instructions h1{
+    padding-top: 20px;
+    color: #3fafd7;
+}
+
+.instructions h2{
+    padding-left: 20px;
+    color: #3fafd7;
+}
+
+.instructions h3{
+    padding-left: 40px;
+}
+
+.instructions h4{
+    padding-left: 60px;
+    color: #3fafd7;
+}
