@@ -4,10 +4,11 @@ body {
   margin: 100;
 }
 
-button{
+.btn{
   border-radius: 5px;
   border: none;
   margin-top: 5px;
+  margin-left: 10px;
   padding: 10px;
   background: #3fafd7;
   color: white;
@@ -35,23 +36,6 @@ input{
 p{
   font-size: 15px;
   line-height: 30px;
-}
-
-.btn {
-  display: block;
-  width: 145px;
-  margin: 100px;
-  padding: 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.25s;
-  background: linear-gradient(90deg, var(--colourOne, #3bc9ff), var(--colourTwo, #ffffff) 50%, var(--colourOne, #3bc9ff)) var(--horizontalChange, 0)/ 200%;
-  box-shadow: 0 0 20px #555;
-  border-radius: 50px;
-}
-
-.btn:hover {
-  --horizontalChange: -45%;
 }
 
 table {  
