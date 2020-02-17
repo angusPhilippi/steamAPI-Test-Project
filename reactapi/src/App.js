@@ -13,7 +13,7 @@ class App extends Component {
 
   componentDidMount() {
 
-    fetch(`/IPlayerService/GetOwnedGames/v0001/?key=${process.env.REACT_APP_API_KEY}&steamid=${process.env.REACT_APP_STEAM_ID}&format=json`,
+    fetch(`/IPlayerService/GetOwnedGames/v0001/?key=${process.env.REACT_APP_API_KEY}&steamid=${process.env.REACT_APP_STEAM_ID}&format=json&include_appinfo=true`,
       {
         "headers":
         {
@@ -38,7 +38,7 @@ class App extends Component {
     if (!isLoaded) {
       return <h2> Loading Data... </h2>
     }
-    else if (data.length > 0) {
+    else if (data.game_count) {
       return (
         <div className="App">
           <h1>Game List for ID: {process.env.REACT_APP_STEAM_ID}</h1>
@@ -46,7 +46,7 @@ class App extends Component {
           <ul>
           {data.games.map(game => (
             <li key= {game.appid}>
-              Game ID: {game.appid} | Gametime Played: {Math.floor(game.playtime_forever / 60)} hours, {Math.round((game.playtime_forever / 60 - Math.floor(game.playtime_forever / 60)) * 60)}minutes.
+              <strong>{game.name}:</strong> {Math.floor(game.playtime_forever / 60)} hours, {Math.round((game.playtime_forever / 60 - Math.floor(game.playtime_forever / 60)) * 60)}minutes.
             </li>
           ))};
                     
