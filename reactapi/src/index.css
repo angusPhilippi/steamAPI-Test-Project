@@ -1,7 +1,7 @@
 body {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.808);
   font-family: 'Montserrat', sans-serif;
-  margin: 100;
+  margin-left: 20px;
 }
 
 .btn{
@@ -21,8 +21,17 @@ h2{
   color: #3fafd7
 }
 
+li{
+  list-style-type: none;
+}
+
 ul{
   margin-left: 20px;
+  line-height: 20px;
+}
+
+ul strong{
+  color: #3fafd7;
 }
 
 input{
@@ -31,36 +40,4 @@ input{
   border-bottom: 2px solid #AAA;
   font-size: 20px;
   width: 80%;
-}
-  
-p{
-  font-size: 15px;
-  line-height: 30px;
-}
-
-table {  
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
-  width: 640px; 
-  border-collapse: 
-  collapse; border-spacing: 0; 
-}
-
-td, th {  
-  border: 1px solid transparent; /* No more visible border */
-  height: 30px; 
-  transition: all 0.3s;  /* Simple transition for hover effect */
-  padding: 4px;
-}
-
-th {  
-  background: #AAA;  /* Darken header a bit */
-  font-weight: bold;
-  width: 40px;
-}
-
-td {  
-  background: #FAFAFA;
-  text-align: center;
-  border: 1px solid #AAA;
 }
